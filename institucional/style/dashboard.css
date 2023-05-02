@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    width: 200px;
+}
+button:hover{
+    width: 250px;
+    height: 50px;
+    transition: 6ms;
+}
+
+img{
+    margin: 5%;
+}
+.opt{
+    text-decoration: none;
+    color: white;
+}

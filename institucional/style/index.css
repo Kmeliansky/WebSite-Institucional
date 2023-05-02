@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* paragrafos e titulos*/
+h1,h2,p,a{
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+/*produtos*/
+.container-produto{
+    display: flex;
+    padding: auto;
+    flex-direction: row;
+    background-color: rgb(237, 237, 237);
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*Sobres*/
+.container-sobre{
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+}
+.container-sobre > .col{
+    color: #ffff;
+}
+
+.titulo-sobre{
+    font-size: 67px;
+}
+
+.img-empresa{
+    margin: 2%;
+    width: 100%;
+    float: right;
+    
+}
+
+/*Footer*/
+footer{
+    background-color: #522828;
+    width: 100%;
+}
+
+.row-contato{
+    height:100%;
+    background-color: rgb(9, 76, 134);
+    position: fixed;
+    left: 1%;
+    top: 50%;
+}
