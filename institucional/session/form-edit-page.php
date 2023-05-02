@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" rows="3" class="form-label">Cores do cabeçalho:</label>
+                                <label for="exampleFormControlTextarea1" rows="3" class="form-label">Cores do Menu:</label>
                                 <input type="color" id="exampleFormControlTextarea1" rows="3" name="descricao_produto"></input>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                 </div>
         </fieldset>
 
-        <!--Edição dos Serviços-->
+        <!--Edição de contatos-->
         <fieldset class="m-5 border border-secondary-subtle">
         <legend>Contato</legend>
                 <div class="mb-3">

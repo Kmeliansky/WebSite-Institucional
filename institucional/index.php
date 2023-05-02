@@ -29,6 +29,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Institucional</title>
+
+    <style>
+      .fixed-top{
+        
+        display: flex;
+        flex-direction: column;
+        width: 5%;
+        margin: 50vh 1%;
+        height: 25%;
+      }
+      .fixed-top > img{
+        width: 50%;
+        margin: 5% auto;
+      }
+    </style>
   
     <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +57,14 @@
 
   </head>
   <body>
+
+  <section class="fixed-top border shadow p-3 mb-5 bg-body-tertiary rounded">
+    <img src="../institucional/image/whatsapp.svg" alt="whatsapp logo">
+    <img src="../institucional/image/facebook.svg" alt="whatsapp logo">
+    <img src="../institucional/image/instagram.svg" alt="whatsapp logo">
+    <img src="../institucional/image/linkedin.svg" alt="whatsapp logo">
+    <img src="../institucional/image/email.svg" alt="whatsapp logo">
+  </section>
 
     <!-- Menu do website -->
     <nav class="navbar navbar-expand-lg " style="background-color: #6043B5;">
@@ -82,13 +105,13 @@
               <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../institucional/image/banner-principal.jpg" class="d-block w-100" alt="...">
+            <img src="../institucional/image/imagem.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="../institucional/image/banner-secundaria.jpg" class="d-block w-100" alt="..."> 
+            <img src="../institucional/image/imagem2.png" class="d-block w-100" alt="..."> 
           </div>
           <div class="carousel-item">
-            <img src="../institucional/image/banner-terceirario.jpg" class="d-block w-100" alt="...">
+            <img src="../institucional/image/imagem3.png" class="d-block w-100" alt="...">
           </div>
         </div>
 
@@ -123,8 +146,8 @@
     <div class="card h-100">
       <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">[Titulo]</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Mostre sua historia</h5>
+        <p class="card-text"> Crie conexões com seu publico mostrando sua historia para quem quiser ver.</p>
       </div>
       <div class="card-footer">
       <button type="button" class="btn btn-dark">Saiba mais</button>
@@ -135,8 +158,8 @@
     <div class="card h-100">
       <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">[Titulo]</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Mostre seus valores</h5>
+        <p class="card-text">Deixe claro seu posicionamento no mercado atraves de nossa pagina e aumente seus clientes.</p>
       </div>
       <div class="card-footer">
       <button type="button" class="btn btn-dark">Saiba mais</button>
@@ -147,8 +170,8 @@
     <div class="card h-100">
       <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">[Titulo]</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h5 class="card-title">Seja visto</h5>
+        <p class="card-text">Disponibilize na sua pagina seus contatos para seus clientes poderem falar com voce.</p>
       </div>
       <div class="card-footer">
       <button type="button" class="btn btn-dark">Saiba mais</button>
@@ -171,8 +194,8 @@
     <div class="card h-100">
       <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">[Titulo]</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Mostre seus serviços</h5>
+        <p class="card-text">Deixe seus clientes saberem que tipo de serviços voce oferece.</p>
       </div>
       <div class="card-footer">
       <button type="button" class="btn btn-dark">Saiba mais</button>
@@ -183,8 +206,8 @@
     <div class="card h-100">
       <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">[Titulo]</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">edite sua pagina</h5>
+        <p class="card-text">Insira quantos serviços forem necessarias para mostrar o seu conteudo.</p>
       </div>
       <div class="card-footer">
       <button type="button" class="btn btn-dark">Saiba mais</button>
@@ -195,8 +218,8 @@
     <div class="card h-100">
       <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">[Titulo]</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <h5 class="card-title">Personalize sua pagina institucional</h5>
+        <p class="card-text">Deixe a pagina com a sua identidade visual sem a necessidade de codigos dificeis.</p>
       </div>
       <div class="card-footer">
       <button type="button" class="btn btn-dark">Saiba mais</button>
@@ -217,13 +240,13 @@
   <img src="https://cdn-landing.arquivei.com.br/blog/wp-content/uploads/2017/09/tipos-empresas-1200_og.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Sobre</h5>
-    <p class="card-text">Descrição sobre a empresa</p>
+    <p class="card-text">Empresas que contam sbre sua historia chamam muito mais a atenção de seus clientes</p>
   
     <h5 class="card-title">Valores e missão da empresa</h5>
-    <p class="card-text">Descrição sobre a empresa</p>
+    <p class="card-text">Mostre para seu publico sua missao com a empresa e os valores que ela segue</p>
 
     <h5 class="card-title">Área de atuação</h5>
-    <p class="card-text">Descrição sobre a a area da empresa</p>
+    <p class="card-text">Conte mais sobre a area em que sua empresa atua, e como ela pode ser a referencia que o mercado precisa</p>
     
   </div>
 </div>
@@ -239,19 +262,22 @@
 
     <ul class="list-group list-group-flush">
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h2 text-light">Institucional</p>
+      <p class="h2 text-light">Contato</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">Sobre a empresa</p>
+      <p class="h6 text-light">Whatsapp</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">Facebook</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">instagram</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">Linkedin</p>
+      </li>
+      <li class="list-group-item" style="background-color: #6043B5;">
+      <p class="h6 text-light">E-mail</p>
       </li>
     </ul>
 
@@ -284,16 +310,13 @@
       <p class="h2 text-light">Institucional</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">Sobre a empresa</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">História</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
-      </li>
-      <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">LGPD</p>
       </li>
     </ul>
 

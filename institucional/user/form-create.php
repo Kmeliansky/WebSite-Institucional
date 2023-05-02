@@ -11,18 +11,15 @@
   <body>
 
     <!-- Menu do website -->
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg " style="background-color: #6043B5;">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">LOGO AQUI</a>
+          <a class="text-uppercase navba r-brand text-light" href="#">Logo aqui</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link text-light" href="form-create.php">Cadastro</a>
-              <a class="nav-link text-light" href="../login/form-login.php">Login</a>
+              <a class="nav-link text-light" href="#sobre-nos">Ajuda</a>
             </div>
-          </div>
         </div>
     </nav>
 
@@ -50,7 +47,7 @@
     <!-- Seção do formulário -->
     <section class="container py-5">
         <div class="row">
-            <form action="process-create.php" method="post" class="row">
+            <form action="process-create.php" method="post" class="border row shadow-sm p-3 mb-5 bg-body-tertiary rounded">
                 
                 <!-- Nome e CPF -->
                 <div class="row">

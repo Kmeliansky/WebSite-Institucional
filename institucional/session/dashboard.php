@@ -46,7 +46,7 @@
               <button type="button" class="btn light border btn-secondary" width="200px"><a class="opt" href="form-edit-user.php">Edita dados</a></button>
               </div>
               <div class="col">
-              <button type="button" class="btn light border btn-secondary" width="200px"><a class="opt" href="#">Minha Página</a></button>
+              <button type="button" class="btn light border btn-secondary" width="200px"><a class="opt" href="../webPage/webinstitucional.php">Minha Página</a></button>
               </div>
             </div>
       </div>
