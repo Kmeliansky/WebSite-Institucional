@@ -1,25 +1,6 @@
 <?php
     // chamada de inclusão do arquivo de conexão com o bd.
     include("../configuration/connection.php");
-    
-    //chamada para o arquivo que verifica se o usuario está logado
-    include("../configuration/user-session.php");
-
-    // recupera a id do usuario
-    $id = $_GET["id"];
-
-    //instrução SQL que puxa os dados do usuario.
-    $SQL = " SELECT nome, cpf, data_nascimento, cep,
-                    endereco, codigo_area, numero_celular, email
-             FROM   usuario
-             WHERE  id = $id;";
-
-    //Executa a instução SQL.
-    $consulta = mysqli_query($connect, $SQL);
-
-    // Criar uma array para exibir as informações do usuario
-    $usuario = mysqli_fetch_assoc($consulta);
-
 
 ?>
 
@@ -69,7 +50,7 @@
     <!-- Menu do website -->
     <nav class="navbar navbar-expand-lg " style="background-color: #6043B5;">
         <div class="container-fluid">
-          <a class="text-uppercase navba r-brand text-light" href="#">Logo aqui</a>
+          <img class="text-uppercase navba r-brand text-light" src="../institucional/image/logo.svg" alt="logo da marca">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -84,7 +65,6 @@
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
                   <li><a class="dropdown-item" href="../institucional/login/form-login.php">Login</a></li>
-                  <li><a class="dropdown-item" href="../institucional/user/form-create.php">Cadastrar</a></li>
                 </ul>
                 </li>
             </div>

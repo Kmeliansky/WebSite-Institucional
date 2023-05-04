@@ -14,20 +14,21 @@
   <body>
 
     <!-- Menu do website -->
-    <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">CRUD</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link text-light" href="dashboard.php">Inicio</a>
-              <a class="nav-link text-light" href="listUsers.php">Meus dados</a>
-            </div>
-          </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg" style="background-color: #6043B5;">
+    <div class="container-fluid">
+      <a class="text-uppercase navba r-brand text-light" href="#">Logo aqui</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-nav">
+        <a class="nav-link text-light" href="login/form-login.php">Ajuda</a>
+        <a class="nav-link text-light" href="login/form-login.php">Sair</a>
+      </div>
+
+    </div>
+  </nav>
 
     <!-- Seção do formulário -->
     <section class="container py-5">
@@ -54,7 +55,7 @@
         <div class="text-center">
 
             <!-- Tabela que exibe os usuários -->
-            <table class="table table-bordered">
+            <table class="table table-bordered  border border-secondary-subtle shadow mb-5 bg-body-tertiary rounded">
                 <thead>
                     <tr>
                         <th scope="col">ID</th>

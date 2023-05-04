@@ -58,24 +58,24 @@
 
     <div class="container-fluid container text-center  border shadow-sm p-3 mb-5 bg-body-tertiary rounded">
        <div class="row">
-          <div class="col">
+          <div class="col-8">
               <div class="row justify-content-center">
                   <form action="process-login.php" method="post" class="border rounded p-3 col-4 ">
                     
                     <!-- E-mail -->
-                    <div class="mb-3">
+                    <div class="mb-5">
                       <label for="email" class="form-label ">E-mail</label>
                       <input type="email" class="form-control " id="email" name="email">
                     </div>
 
                     <!-- Senha -->
-                    <div class="mb-3">
+                    <div class="mb-5">
                       <label for="senha" class="form-label">Senha</label>
                       <input type="password" class="form-control" id="senha" name="senha">
                     </div>
 
                     <!-- Lembrar-me -->
-                    <div class="mb-3 form-check">
+                    <div class="mb-5 form-check">
                       <input type="checkbox" class="form-check-input" id="lembrar" name="lembrar">
                       <label class="form-check-label" for="lembrar">Lembrar-me</label>
                     </div>
