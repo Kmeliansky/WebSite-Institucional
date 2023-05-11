@@ -41,11 +41,7 @@
 
     </div>
   </nav>
-    <img class="help" width="50px" src="../image/help.svg" alt="">
-  
-
-  
-
+    
   <section class="container py-5 text-center">
     <!-- Seção do menu -->
     <div class="container py-5">
@@ -62,18 +58,18 @@
               Produto
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../session/page/form-product-edit.php">Cadastrar Produtos</a></li>
-              <li><a class="dropdown-item" href="../session/page/form-sobre-edit.php">Listar Produtos</a></li>
+              <li><a class="dropdown-item" href="../session/produto/form-product-edit.php">Cadastrar Produtos</a></li>
+              <li><a class="dropdown-item" href="../session/produto/proccess-list-product.php">Listar Produtos</a></li>
             </ul>
           </div>
         </div>
         <div class="col">
           <button type="button" class="btn light border btn-secondary" width="200px"><a class="opt"
-              href="../session/page/form-sobre-edit.php">Sobre</a></button>
+              href="../session/sobre/form-sobre-edit.php">Sobre</a></button>
         </div>
         <div class="col">
           <button type="button" class="btn light border btn-secondary" width="200px"><a class="opt"
-              href="../session/page/form-contato-edit.php">Contato</a></button>
+              href="../session/contato/form-contato-edit.php">Contato</a></button>
         </div>
         <div class="nav-item dropdown">
           <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -81,7 +77,7 @@
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="../session/user/form-create.php">Cadastrar Usuário</a></li>
-            <li><a class="dropdown-item" href="../session/proccess-list-users.php">Editar Usuários</a></li>
+            <li><a class="dropdown-item" href="../session/proccess-list-users.php">Usuários cadastrados</a></li>
           </ul>
         </div>
       </div>

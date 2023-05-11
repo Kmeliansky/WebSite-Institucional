@@ -1,9 +1,3 @@
-<?php
-    // chamada de inclusão do arquivo de conexão com o bd.
-    include("../configuration/connection.php");
-
-?>
-
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -160,56 +154,11 @@
   </div>
 </div>
 
-    
-<!--sessao de serviços-->
 
-<div class="text-justify mt-5">
-          <div class="text-center">
-          <h2 id="servico">Serviços</h2>
-          </div>
-    </div>
+<!--Banner-->
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Mostre seus serviços</h5>
-        <p class="card-text">Deixe seus clientes saberem que tipo de serviços voce oferece.</p>
-      </div>
-      <div class="card-footer">
-      <button type="button" class="btn btn-dark">Saiba mais</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">edite sua pagina</h5>
-        <p class="card-text">Insira quantos serviços forem necessarias para mostrar o seu conteudo.</p>
-      </div>
-      <div class="card-footer">
-      <button type="button" class="btn btn-dark">Saiba mais</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="https://www.dinamize.com.br/wp-content/uploads/2020/09/marketing-de-produto-thumb.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Personalize sua pagina institucional</h5>
-        <p class="card-text">Deixe a pagina com a sua identidade visual sem a necessidade de codigos dificeis.</p>
-      </div>
-      <div class="card-footer">
-      <button type="button" class="btn btn-dark">Saiba mais</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!--sessao de sobre-->
-
 <div class="text-justify mt-5">
           <div class="text-center">
           <h2 id="sobre-nos">Nossa Empresa</h2>

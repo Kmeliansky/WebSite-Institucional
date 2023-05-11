@@ -23,6 +23,16 @@
             //Fecha a conexão com o BD.
             mysqli_close($connect);
 
+            //Verifica se existe a sessão de usuário.
+            if(!isset($_SESSION)){
+
+                //Caso ela NÃO exista, abre uma sessão.
+                session_start();
+            }
+
+            //Armazenar o e-mail do usuário em uma variável de sessão.
+            $_SESSION['usuarioEmail'] = $email;
+
             //Redireciona o usuário para a sessão restrita.
             header("location: ../session/dashboard.php");
         }else{

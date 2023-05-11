@@ -6,9 +6,8 @@
     $id = $_GET["id"];
 
     //Instrução SQL que puxa os dados do usuário.
-    $SQL = "SELECT nome, cpf, data_nascimento, genero, cep, logradouro, 
-                   numero_residencia, complemento, bairro, cidade, estado,
-                   codigo_area, numero_celular, email
+    $SQL = "SELECT nome, cpf, data_nascimento, cep, endereco, 
+                   codigo_area, numero_celular, email,
             FROM usuario
             WHERE id = $id;";
 

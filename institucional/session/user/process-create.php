@@ -1,8 +1,7 @@
 
 <?php
     //Chama o arquivo de conexão com o BD.
-    include("../configuration/connection.php");
-
+    include("./configuration/connection.php");
     //Variáveis que irão receber os dados via POST do formulário.
     $nome = $_POST["nome"];
     $cpf = $_POST["cpf"];
@@ -30,7 +29,7 @@
                     '" . $cpf . "', 
                     '" . $dataNascimento . "', 
                     '" . $cep . "', 
-                    '" . $logradouro . "', 
+                    '" . $endereco . "', 
                     '" . $codigoArea . "', 
                     '" . $celular . "', 
                     '" . $email . "', 
@@ -45,13 +44,13 @@
 
         //Redireciona a página para o login.
         $retorno = "Usuário cadastrado com sucesso!!!";
-        header("location: ../login/form-login.php?retorno=" . $retorno);
+        header("location: ../dashboard.php?retorno=" . $retorno);
     } else {
         //Encerra a conexão com o BD.
         mysqli_close($connect);
 
         //Redireciona a página para o login.
         $retorno = "Não foi possível cadastrar o usuário!!!";
-        header("location: form-create.php?retorno=" . $retorno);
+        header("location: ../../session/user/form-create.php?retorno=" . $retorno);
     }
 ?>
