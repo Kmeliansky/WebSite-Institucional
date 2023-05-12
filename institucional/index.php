@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Institucional</title>
-
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
       .fixed-top{
         
         display: flex;
         flex-direction: column;
         width: 5%;
-        margin: 50vh 1%;
+        margin: 30vh 1%;
         height: 25%;
       }
       .fixed-top > img{
         width: 50%;
         margin: 5% auto;
+      }
+      .mapa{
+        width: 100%;
       }
     </style>
   
@@ -28,30 +31,47 @@
     <!-- Link de referência ao CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
-    <link rel="stylesheet" type="text/css" href="../institucional/style/index.css">
-
   </head>
   <body>
 
   <section class="fixed-top border shadow p-3 mb-5 bg-body-tertiary rounded">
     <img src="../institucional/image/whatsapp.svg" alt="whatsapp logo">
-    <img src="../institucional/image/facebook.svg" alt="whatsapp logo">
-    <img src="../institucional/image/instagram.svg" alt="whatsapp logo">
-    <img src="../institucional/image/linkedin.svg" alt="whatsapp logo">
-    <img src="../institucional/image/email.svg" alt="whatsapp logo">
+    <img src="../institucional/image/facebook.svg" alt="facebook logo">
+    <img src="../institucional/image/instagram.svg" alt="instagram logo">
+    <img src="../institucional/image/email.svg" alt="email logo">
   </section>
 
     <!-- Menu do website -->
-    <nav class="navbar navbar-expand-lg " style="background-color: #6043B5;">
-        <div class="container-fluid">
-          <img class="text-uppercase navba r-brand text-light" src="../institucional/image/logo.svg" alt="logo da marca">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="navbar-nav">
+    <nav class="nav">
+    <section class="container py-3 nav">
+        <div class="item-menu">
+          <img class="text-uppercase navba r-brand text-light" src="../institucional/image/logo.svg"
+            alt="logo da marca">
+        </div>
+        <div class="item-menu">
+          <a class="nav-link text-light" href="#sobre-nos">Sobre Nós</a>
+          <a class="nav-link text-light" href="#produto">Produtos</a>
+          <a class="nav-link text-light" href="#localizacao">Localização</a>
+          <a class="nav-link text-light" href="login/form-login.php">Contato</a>
+          <li class="nav-item dropdown">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Entrar
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../institucional/login/form-login.php">Login</a></li>
+            </ul>
+          </li>
+        </div>
+        
+    </nav>
+    
+
+    <!--
+
+<div class="navbar-nav">
               <a class="nav-link text-light" href="#sobre-nos">Sobre Nós</a>
               <a class="nav-link text-light" href="#produto">Produtos</a>
-              <a class="nav-link text-light" href="#servico">Serviços</a>
+              <a class="nav-link text-light" href="#localizacao">Localização</a>
               <a class="nav-link text-light" href="login/form-login.php">Contato</a>
               <li class="nav-item dropdown">
                 <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,8 +82,8 @@
                 </ul>
                 </li>
             </div>
-        </div>
-    </nav>
+
+     -->
 
     <!-- Seção de titulo -->
     <section class="container py-5">
@@ -155,7 +175,27 @@
 </div>
 
 
-<!--Banner-->
+<!--Contato-->
+<div class="m-5 container-contato border">
+<h2 class="text-center">Entre em Contato!!</h2>
+<p class="text-center">Gostou de um de nossos produtos? entre em contato para mais informações ou nos siga para saber mais nas redes sociais</p>
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col">
+    <a href="http://"><img width="25%" src="../institucional/image/whatsapp.svg" alt="whatsapp logo"></a>
+    </div>
+    <div class="col">
+    <a href="http://"><img width="25%" src="../institucional/image/facebook.svg" alt="facebook logo"></a>
+    </div>
+    <div class="col">
+    <a href="http://"><img width="25%" src="../institucional/image/instagram.svg" alt="instagram logo"></a>
+    </div>
+    <div class="col">
+    <a href="http://"><img width="25%" src="../institucional/image/email.svg" alt="email logo"></a>
+    </div>
+  </div>
+</div>
+</div>
 
 
 <!--sessao de sobre-->
@@ -180,6 +220,17 @@
   </div>
 </div>
 
+  <div class="mapa-container text-center">
+    <h2 id="localizacao" class="text-center">Localização</h2>
+    <iframe class="mapa"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0865678717855!2d-48.443138223592186!3d-22.910177637994295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6df00ad9e9761%3A0x82af7313ba02130!2sSENAI%20-%20Botucatu!5e0!3m2!1spt-BR!2sbr!4v1683923481295!5m2!1spt-BR!2sbr"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <a class="btn btn-danger" href="https://goo.gl/maps/K6CKdT8trJPXrivb7">Ver rotas</a>
+      </div>
+  </div>
+
 </section>
 
   <!--sessao do footer-->
@@ -203,9 +254,6 @@
       <p class="h6 text-light">instagram</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">Linkedin</p>
-      </li>
-      <li class="list-group-item" style="background-color: #6043B5;">
       <p class="h6 text-light">E-mail</p>
       </li>
     </ul>
@@ -218,17 +266,15 @@
       <p class="h2 text-light">Sobre a empresa</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">Sobre nós</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">Produtos</p>
       </li>
       <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
+      <p class="h6 text-light">Localização</p>
       </li>
-      <li class="list-group-item" style="background-color: #6043B5;">
-      <p class="h6 text-light">opcao</p>
-      </li>
+
     </ul>
 
     </div>
