@@ -32,5 +32,8 @@ possam entrar em contato com a organização.
 HTML, CSS, Bootstrap, Figma 
 
 **Back-end:**
-PHP, Apache, HeidISQL, SQL, 
+PHP, Apache, HeidISQL, SQL,
+
+**ferramentas:**
+VSCode, Git, Github, Diagram.net
 
