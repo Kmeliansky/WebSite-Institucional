@@ -44,28 +44,28 @@ VSCode, Git, Github, Diagram.net
 
 ## Telas do software
 
-Tela Inicial
+<h2> sdsd</h2>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-Login
+<h2> sdsd</h2>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-Cadastro
+<h2> sdsd</h2>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-Dashboard
+<h2> sdsd</h2>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-Edição de produtos
+<h2> sdsd</h2>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-Edição Sobre
+<h2> sdsd</h2>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-Edição de contatos
+<h2> sdsd</h2>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-Cadastro de novos usuarios 
+<h2> sdsd</h2> 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
