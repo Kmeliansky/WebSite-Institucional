@@ -17,7 +17,7 @@ possam entrar em contato com a organização.
 
 ## Tecnologias utilizada
 
-**Front-end:** 
+
 <div align="center">
  
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
@@ -30,7 +30,7 @@ possam entrar em contato com a organização.
           
 </div>       
 
-**Back-end:**
+
 <div align="center"> 
 
            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
