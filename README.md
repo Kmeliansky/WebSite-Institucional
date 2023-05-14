@@ -44,16 +44,16 @@ VSCode, Git, Github, Diagram.net
 
 ## Telas do software
 
-<h2> sdsd</h2>
+<p> sdsd</p>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-<h2> sdsd</h2>
+<h1> sdsd</h1>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-<h2> sdsd</h2>
+<h3> sdsd</h3>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-<h2> sdsd</h2>
+<span>sdsd</span>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
