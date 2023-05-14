@@ -44,16 +44,16 @@ VSCode, Git, Github, Diagram.net
 
 ## Telas do software
 
-**Tela Inicial:** 
+-Tela Inicial:
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-**Login:** 
+-Login:
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-**Cadastro:** 
+-Cadastro:
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-**Dashboard:** 
+-Dashboard:
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 **Edição de produtos:** 
