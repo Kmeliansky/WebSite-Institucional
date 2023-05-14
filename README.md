@@ -44,28 +44,28 @@ VSCode, Git, Github, Diagram.net
 
 ## Telas do software
 
--Tela Inicial:
+-[Tela Inicial]
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
--Login:
+-[Login]
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
--Cadastro:
+-[Cadastro]
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
--Dashboard:
+-[Dashboard]
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-**Edição de produtos:** 
+-[Edição de produtos:]
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-**Edição Sobre:** 
+-[Edição Sobre:]
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-**Edição de contatos:** 
+-[Edição de contatos:]
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-**Cadastro de novos usuarios :** 
+-[Cadastro de novos usuarios:] 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
