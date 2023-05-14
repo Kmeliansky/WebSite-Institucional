@@ -44,29 +44,18 @@ VSCode, Git, Github, Diagram.net
 
 ## Telas do software
 
-<p> sdsd</p>
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-<h1> sdsd</h1>
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-<h3> sdsd</h3>
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-<span>sdsd</span>
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-
-
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
