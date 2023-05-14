@@ -25,3 +25,12 @@ possam entrar em contato com a organização.
 
 
 
+
+## Tecnologias utilizada
+
+**Front-end:**
+HTML, CSS, Bootstrap, Figma 
+
+**Back-end:**
+PHP, Apache, HeidISQL, SQL, 
+
