@@ -21,11 +21,6 @@ possam entrar em contato com a organização. O usuario podera realizar todas es
 
 
 
-
-
-
-
-
 ## Tecnologias utilizada
 
 **Front-end:**
@@ -49,7 +44,7 @@ VSCode, Git, Github, Diagram.net
 
 ![App Screenshot](https://i.ibb.co/tYFMHqt/tmp-bef8385a-fc1c-4400-ad31-5fac38541ed5.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://i.ibb.co/tYFMHqt/tmp-bef8385a-fc1c-4400-ad31-5fac38541ed5.png)
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
