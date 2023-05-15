@@ -47,7 +47,7 @@ VSCode, Git, Github, Diagram.net
 
 ## Telas do software
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://i.ibb.co/tYFMHqt/tmp-bef8385a-fc1c-4400-ad31-5fac38541ed5.png)
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
