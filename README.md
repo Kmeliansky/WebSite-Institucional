@@ -38,7 +38,7 @@ VSCode, Git, Github, Diagram.net
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here) 
 ## Estrutura de pastas
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
 
 ## Telas do software
 
