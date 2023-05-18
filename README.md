@@ -1,5 +1,5 @@
 
-# Projeto de conclusão de curso: Web Site Institucional
+# Projeto de conclusão de curso: Web Site Institucional (esse arquivo está em edição)
 
 O objetivo do website é apresentar informações sobre a organização, sua história,
 sua missão, visão e valores. Deve apresentar também os produtos ou serviços
@@ -34,8 +34,18 @@ VSCode, Git, Github, Diagram.net
 
 
 ##  Banco de Dados
-
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here) 
-## Estrutura de pastas
 
+## Estrutura de pastas
+![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
+
+## Tela inicial
+
+- Interface Grafica
+![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
+
+-Codigo Front-end
+![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
+
+- Codigo Back-end
 ![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
