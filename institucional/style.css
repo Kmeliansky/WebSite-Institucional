@@ -1,10 +1,22 @@
 .nav{
-    
     display: flex;
     justify-content: space-between;
-    background-color: #6043B5;
 }
-
 .item-menu{
     display: flex;
 }
+
+/*  responsividade do index html*/
+@media (max-width: 976px) {
+    body{
+        background-color: #6043B5;
+    }
+    .container-fixed{
+        display: none;
+      }
+
+      .container-fixed > img{
+        width: 50%;
+      }
+
+ }

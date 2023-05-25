@@ -7,11 +7,15 @@
     include("../../configuration/user-session.php");
 
     //Variáveis que irão receber os dados via POST do formulário.
+    $nome = $_POST["nome"];
+    $imagem = $_POST["imagem"];
     $historia = $_POST["historia"];
     $missao = $_POST["missao"];
     $visao = $_POST["visao"];
     $valores = $_POST["valores"];
-    $objetivo = $_POST["objetivos"];
+    $objetivo = $_POST["objetivo"];
+    $localizacao = $_POST["localizacao"];
+    
 
     //Seleciona o que existir na tabela contato.
     $SQLConsulta = "SELECT * FROM sobre;";
@@ -24,24 +28,33 @@
 
         //Instrução SQL de inserção de dados no BD.
         $SQL = "UPDATE sobre SET
+                       nome = '" . $nome . "',
+                       foto = '" . $imagem . "',
                        historia = '" . $historia . "',
                        missao = '" . $missao . "',
                        visao = '" . $visao . "',
                        valores = '" . $valores . "',
-                       objetivo = '" . $objetivo . "';";
+                       objetivo = '" . $objetivo . "',
+                       localizacao = '". $localizacao ."';";
     } else {
 
         //Instrução SQL de inserção de dados no BD.
-        $SQL = "INSERT INTO sobre (historia, 
-                                     missao, 
-                                     visao, 
-                                     valores,
-                                     objetivo)
-                VALUES ('" . $historia . "', 
+        $SQL = "INSERT INTO sobre ( nome,
+                                    foto,
+                                    historia, 
+                                    missao, 
+                                    visao, 
+                                    valores,
+                                    objetivo,
+                                    localizacao)
+                VALUES ('" . $nome . "',
+                        '" . $imagem . "',
+                        '" . $historia . "', 
                         '" . $missao . "', 
                         '" . $visao . "', 
                         '" . $valores . "',
-                        '" . $objetivo ."' );";
+                        '" . $objetivo ."',
+                        '" . $localizacao ."' );";
     }
 
      //Faz a tentativa de inserção dos dados no BD.

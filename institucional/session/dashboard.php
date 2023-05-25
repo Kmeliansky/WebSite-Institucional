@@ -36,7 +36,7 @@
       <a class="text-uppercase navba r-brand text-light" href="#">Logo aqui</a>
       <div class="navbar-nav">
         <a class="nav-link text-light" href="login/form-login.php">Ajuda</a>
-        <a class="nav-link text-light" href="login/form-login.php">Sair</a>
+        <a class="fw-bold d-flex nav-link text-light" href="exit.php">Sair</a>
       </div>
 
     </div>

@@ -1,6 +1,10 @@
 <?php
     //chamada para o arquivo que verifica se o usuario está logado
     include("../../configuration/user-session.php");
+
+    //chamada para o arquivo que verifica se o usuario está logado
+    include("../../configuration/user-session.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

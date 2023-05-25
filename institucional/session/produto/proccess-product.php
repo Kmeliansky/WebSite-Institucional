@@ -31,7 +31,7 @@
         mysqli_close($connect);
 
         //Cria uma variável de retorno usando a sessão.
-        $_SESSION['retorno'] = "Cliente cadastro cadastrado com sucesso!!!";
+        $_SESSION['retorno'] = "Produto cadastro cadastrado com sucesso!!!";
 
         //Redireciona o usuário.
         header("location: form-product-edit.php");
@@ -40,7 +40,7 @@
         mysqli_close($connect);
 
         //Cria uma variável de retorno usando a sessão.
-        $_SESSION['retorno'] = "Não foi possível cadastrar o Cliente!!!";
+        $_SESSION['retorno'] = "Não foi possível cadastrar o Produto!!!";
 
         //Redireciona o usuário.
         header("location: form-product-edit.php");
