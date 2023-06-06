@@ -33,10 +33,14 @@ PHP, Apache, HeidISQL, SQL,
 VSCode, Git, Github, Diagram.net
 
 
-##  Banco de Dados
+##  Caso de Uso
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here) 
 
-## Estrutura de pastas
+- Administrador: 
+
+- Usuario:
+
+## Diagrama de Entidade e Relacionamento
 ![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
 
 ## Tela inicial
