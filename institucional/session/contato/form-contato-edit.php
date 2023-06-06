@@ -1,10 +1,6 @@
 <?php
     //chamada para o arquivo que verifica se o usuario está logado
     include("../../configuration/user-session.php");
-
-    //chamada para o arquivo que verifica se o usuario está logado
-    include("../../configuration/user-session.php");
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -63,19 +59,19 @@
         <h2>Contato</h2>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Celular</label>
-          <input type="tel" class="input-txt form-control" id="celular" name="celular" placeholder="Ex: (14)981228218">
+          <input type="tel" class="input-txt form-control" id="celular" name="celular" placeholder="Ex: (14)981228218" maxlength="11" required>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-          <input type="text" class="input-txt form-control" id="email" name="email" placeholder="Ex: user@gmail.com">
+          <input type="text" class="input-txt form-control" id="email" name="email" placeholder="Ex: user@gmail.com" maxlength="255" required>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Facebook</label>
-          <input type="text" class="input-txt form-control" id="facebook" name="facebook" placeholder="Ex: https://facebook.com.br">
+          <input type="text" class="input-txt form-control" id="facebook" name="facebook" placeholder="Ex: https://facebook.com.br" maxlength="255" required>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Instagram</label>
-          <input type="text" class="input-txt form-control" id="instagram" name="instagram" placeholder="Ex: https://Instagram.com.br">
+          <input type="text" class="input-txt form-control" id="instagram" name="instagram" placeholder="Ex: https://Instagram.com.br" maxlength="255" required>
         </div>
       </fieldset>
 

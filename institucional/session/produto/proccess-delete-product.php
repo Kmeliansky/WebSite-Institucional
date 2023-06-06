@@ -1,6 +1,8 @@
 <?php
     //Chamada de inclusão do arquivo de conexão com o BD.
-    include("../configuration/connection.php");
+    include("../../configuration/connection.php");
+
+    include("../../configuration/user-session.php");
 
     //Recuperar o ID do usuário via método GET.
     $id = $_GET["id"];
@@ -15,7 +17,7 @@
         mysqli_close($connect);
 
         //Cria uma mensagem de retorno da operação.
-        $retorno = "O Produto foi excluído com sucesso!!!";
+        $retorno = "O produto foi excluído com sucesso!!!";
 
         //Redireciona o usuário.
         header("location: proccess-list-product.php?retorno=" . $retorno);
@@ -27,6 +29,6 @@
         $retorno = "Não foi possivel excluir o produto...";
 
         //Redireciona o usuário.
-        header("location: proccess-list-users.php?retorno=" . $retorno);
+        header("location: proccess-list-product.php?retorno=" . $retorno);
     }
 ?>

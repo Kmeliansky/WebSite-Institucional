@@ -1,6 +1,27 @@
 <?php
     //chamada para o arquivo que verifica se o usuario está logado
     include("../configuration/user-session.php");
+    include("../configuration/connection.php");
+
+    //Instrução SQL de seleção dos dados sobre a empresa.
+    $SQLSobre = "SELECT * FROM sobre WHERE ativo = 1;";
+          
+    //Executa a consulta SQL.
+    $consultaSobre = mysqli_query($connect, $SQLSobre);
+
+    //Verifica se existem retornos na consulta SQL.
+    if (mysqli_num_rows($consultaSobre) > 0){
+
+      //apresenta todas as informações sobre a empresa
+      $sobre = mysqli_fetch_assoc($consultaSobre);
+      $imagemSobre = "data:image/jpeg;base64," . base64_encode($sobre['imagem_empresa']);
+      $imagemLogo = "data:image/jpeg;base64," . base64_encode($sobre['logo']);
+      } else{
+
+      //Retorna a mensagem para o usuário.
+      print("Não existem informações cadastradas sobre a empresa no banco de dados.");
+      }
+
 ?>
 
 <!doctype html>
@@ -16,30 +37,68 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <style>
-      .help{
-        position: fixed;
-        margin: 3% 5%;
-      }
+    .item-menu {
+      display: flex;
+    }
 
-      .row{
-        display: flex;
-        flex-wrap: wrap;
-      }
-      </style>
+    .dropbtn {
+      background-color: <?php print($sobre["cor_secundaria"]) ?>;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: <?php print($sobre["cor_primaria"]) ?>;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: <?php print($sobre["cor_primaria"]) ?>;
+    }
+
+    </style>
 </head>
 
 <body>
 
   <!-- Menu do website -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #6043B5;">
-    <div class="container-fluid">
-      <a class="text-uppercase navba r-brand text-light" href="#">Logo aqui</a>
-      <div class="navbar-nav">
-        <a class="nav-link text-light" href="login/form-login.php">Ajuda</a>
-        <a class="fw-bold d-flex nav-link text-light" href="exit.php">Sair</a>
+    <!----------------------Menu------------------------>
+    <nav class="nave d-flex align-items-center" style="background-color:<?php print($sobre["cor_primaria"]) ?>;">
+    <section class="container py-3 nav d-flex justify-content-between align-items-center">
+      <div class="item-menu">
+      <img class="" src="<?php print($imagemLogo); ?>" alt="Imagem do Produto" width="70px">
       </div>
-
-    </div>
+      <div class="item-menu">
+        <a class="nav-link text-light btn" href="../session/exit.php" style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;">Sair</a>
+      </div>
+    </section>
   </nav>
     
   <section class="container py-5 text-center">
@@ -49,36 +108,33 @@
       <p>Seja bem-vindo a nossa página principal, caso necessite de ajuda <a href="ajuda.php">Clique aqui</a></p>
     </div>
 
-    <div class="container text-center border border-secondary-subtle p-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-      <div class="row row-cols-4">
+    <div class="rounded d-flex justify-content-center flex-wrap">
+      <div class="row row-cols-4 d-flex justify-content-center flex-wrap">
         <div class="col">
-          <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Produto
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../session/produto/form-product-edit.php">Cadastrar Produtos</a></li>
-              <li><a class="dropdown-item" href="../session/produto/proccess-list-product.php">Listar Produtos</a></li>
-            </ul>
+        <div class="dropdown">
+            <button class="dropbtn">Produto</button>
+            <div class="dropdown-content">
+            <a class="dropdown-item" href="../session/produto/form-product-edit.php">Cadastrar Produtos</a>
+            <a class="dropdown-item" href="../session/produto/proccess-list-product.php">Listar Produtos</a>
+            </div>
           </div>
         </div>
         <div class="col">
-          <button type="button" class="btn light border btn-secondary" width="200px"><a class="opt"
+          <button type="button" class="dropbtn" width="200px" style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
               href="../session/sobre/form-sobre-edit.php">Sobre</a></button>
         </div>
         <div class="col">
-          <button type="button" class="btn light border btn-secondary" width="200px"><a class="opt"
+          <button type="button" class="dropbtn" width="200px" style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
               href="../session/contato/form-contato-edit.php">Contato</a></button>
         </div>
         <div class="nav-item dropdown">
-          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Usuários
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="../session/user/form-create.php">Cadastrar Usuário</a></li>
-            <li><a class="dropdown-item" href="../session/proccess-list-users.php">Usuários cadastrados</a></li>
-          </ul>
+        <div class="dropdown">
+            <button class="dropbtn">Usuários</button>
+            <div class="dropdown-content">
+            <a class="dropdown-item" href="../session/user/form-create.php">Cadastrar Usuário</a>
+            <a class="dropdown-item" href="../session/proccess-list-users.php">Usuários cadastrados</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

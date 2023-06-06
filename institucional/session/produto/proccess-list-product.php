@@ -75,7 +75,7 @@
                     include("../../configuration/connection.php");
 
                     //Instrução SQL de seleção dos usuários.
-                    $SQL = "SELECT id, imagem_produto, titulo, descricao, preco FROM produto WHERE ativo = 1;";
+                    $SQL = "SELECT * FROM produto WHERE ativo = 1;";
 
                     //Executa a consulta SQL.
                     $consulta = mysqli_query($connect, $SQL);
@@ -86,10 +86,11 @@
                       //Laço de repetição dos usuários.
                       //Apresenta todos os usuários do BD.
                       while ($produto = mysqli_fetch_assoc($consulta)){
+                        $imagem = "data:image/jpeg;base64," . base64_encode($produto['imagem_produto']);
                         ?>
                         <tr>
                           <th scope="row"><?php print($produto["id"]); ?></th>
-                          <td><?php print($produto["imagem_produto"]); ?></td>
+                          <td><img class="card-img-top" src="<?php print($imagem); ?>" alt="Imagem do Produto"></td>
                           <td><?php print($produto["titulo"]); ?></td>
                           <td><?php print($produto["descricao"]); ?></td>
                           <td><?php print($produto["preco"]); ?></td>

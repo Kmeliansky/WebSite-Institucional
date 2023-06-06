@@ -1,3 +1,7 @@
+<?php
+    //chamada para o arquivo que verifica se o usuario está logado
+    include("../../configuration/user-session.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -47,45 +51,39 @@
     </section>
 
     <section class="container py-5 text-center">
-        <form class="form border border-secondary-subtle shadow mb-5 bg-body-tertiary rounded"
-            action="proccess-product.php" method="post">
+        <form class="form border border-secondary-subtle shadow mb-5 bg-body-tertiary rounded" action="proccess-product.php" method="POST" enctype="multipart/form-data">
             <!--Edição dos produtos-->
             <fieldset class="m-5  border-secondary-subtle">
                 <h2>Produtos</h2>
                 <div class="mb-3">
-                    <label for="formFile" class="form-label">Imagem do produto</label>
-                    <input class="form-control" type="file" id="formFile" name="imagem_produto">
+                    <div class="text-start">
+                        <label for="formFile" class="form-label">Imagem do produto</label>
+                    </div>
+                    <input class="form-control" type="file" id="imagem" name="imagem">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Titulo:</label>
-                    <input type="text" class="input-txt form-control" id="exampleFormControlInput1"
-                        name="titulo_produto">
+                    <div class="text-start">
+                        <label for="exampleFormControlInput1" class="form-label">Titulo:</label>
+                    </div>
+                    <input type="text" class="input-txt form-control" id="exampleFormControlInput1" name="titulo_produto" required maxlength="255">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
-                    <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="descricao_produto"></textarea>
+                    <div class="text-start">
+                        <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
+                    </div>
+                    <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3" name="descricao_produto" required maxlength="255"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Preço</label>
-                    <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="valor_produto"></textarea>
+                    <div class="text-start">
+                        <label for="exampleFormControlTextarea1" class="form-label">Preço</label>
+                    </div>
+                    <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3" name="valor_produto" required maxlength="255"></textarea>
                 </div>
             </fieldset>
 
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-light"> <a href="../dashboard.php"> Voltar</a></button>
-                        <button type="submit" class="btn btn-success">Salvar</button>
-                    </div>
-                    <div class="col">
-
-                    </div>
-                </div>
+            <div class="text-center m-5">
+                    <button type="button" class="btn btn-light text-center"> <a href="../dashboard.php"> Voltar</a></button>
+                    <button type="submit" class="btn btn-success text-center">Salvar</button>  
             </div>
         </form>
     </section>

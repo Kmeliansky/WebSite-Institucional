@@ -23,26 +23,25 @@
         </div>
     </nav>
 
-    <?php
-      //Recupera a variavel via metodo GET.
-      $retorno = $_GET["retorno"];
+    <!-- Seção que apresentará a mensagem para o usuário -->
+    <section class="container py-5 text-center">
+        <?php
+        //Verifica se existe alguma mensagem de retorno.
+        if(isset($_SESSION['retorno'])){
 
-      //Verifica a variavel possui valor e a apresenta.
-      if(isset($retorno)){
-          
-          //Apresenta a mensagem usando o print.
-          print('
+          //Apresenta a mensagem de retorno para o usuário.
+          print($_SESSION['retorno']);
 
-          <div class="container justify-content-center mt-5">
-            <div class="alert alert-danger text-center" role="alert">
-              ' . $retorno . '
-            </div>
-          </div>
-          
-          ');
-        
-      }
-    ?>
+          //Deleta a variável de sessão.
+          unset($_SESSION['retorno']);
+        }else{
+
+          //Apresenta uma mensagem.
+          print("Preencha com as informações do novo usuario...");
+
+        }
+      ?>
+    </section>
 
     <!-- Seção do formulário -->
     <section class="container py-5">

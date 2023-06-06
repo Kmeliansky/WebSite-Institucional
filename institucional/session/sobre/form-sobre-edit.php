@@ -1,3 +1,8 @@
+<?php
+//chamada para o arquivo que verifica se o usuario está logado
+include("../../configuration/user-session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,9 +22,7 @@
     <!-- Menu do website -->
     <nav class="navbar navbar-expand-lg " style="background-color: #6043B5;">
         <div class="container-fluid">
-            <img class="text-uppercase navba r-brand text-light" src="../institucional/image/logo.svg"
-                alt="logo da marca">
-
+            <img class=" img-thumbnail text-uppercase navba r-brand text-light" src="../institucional/image/logo.svg" alt="logo da marca">
             <div class="navbar-nav">
                 <a class="nav-link text-light" href="login/form-login.php">Ajuda</a>
             </div>
@@ -49,7 +52,7 @@
 
     <section class="container py-5 text-center">
         <form class="form border border-secondary-subtle shadow mb-5 bg-body-tertiary rounded"
-            action="proccess-sobre.php" method="post">
+            action="proccess-sobre.php" method="post" enctype="multipart/form-data">
             <!--Edição sobre a empresa-->
             <fieldset class="m-5 border-secondary-subtle">
                 <h2>Sobre</h2>
@@ -58,20 +61,38 @@
                         <label for="exampleFormControlInput1" class="form-label">Nome da Empresa</label>
                     </div>
                     <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="nome" maxlength="255"></textarea>
+                        name="nome" required maxlength="500"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="text-start">
-                    <label for="formFile" class="form-label">Imagem do produto</label>
+                        <label for="formFile" class="form-label">Logo da Empresa</label>
                     </div>
-                    <input class="form-control" type="file" id="formFile" name="imagem_sobre">
+                        <input class="form-control" type="file" id="formFile" name="logo">
+                </div>
+                <div class="mb-3">
+                    <div class="text-start">
+                        <label for="formFile" class="form-label">Imagem da Empresa</label>
+                    </div>
+                        <input class="form-control" type="file" id="formFile" name="imagem">
+                </div>
+                <div class="mb-3">
+                    <div class="text-start">
+                        <label for="formFile" class="form-label">Cor primaria da sua identidade visual</label>
+                    </div>
+                        <input class="form-control" type="color" id="color" name="cor_primaria">
+                </div>
+                <div class="mb-3">
+                    <div class="text-start">
+                        <label for="formFile" class="form-label">Cor secundaria da sua identidade visual</label>
+                    </div>
+                        <input class="form-control" type="color" id="color" name="cor_secundaria">
                 </div>
                 <div class="mb-3">
                     <div class="text-start">
                         <label for="exampleFormControlInput1" class="form-label">História</label>
                     </div>
                     <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="historia" maxlength="255"></textarea>
+                        name="historia" required maxlength="500"></textarea>
                 </div>
                 <div class="mb-3">
                     <div title="A missão de uma empresa é aquilo que ela determina como a razão de ser do seu negócio, a sua entrega ao cliente. Como a empresa é um ser vivo e mutável, a missão pode ser revista ao longo do tempo, se adequando às novas necessidades do mercado"
@@ -79,7 +100,7 @@
                         <label for="exampleFormControlInput1" class="form-label">Missão</label>
                     </div>
                     <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="missao" maxlength="255"></textarea>
+                        name="missao" required maxlength="500"></textarea>
                 </div>
                 <div class="mb-3">
                     <div title="A visão de uma empresa é onde ele quer chegar em um determinado tempo. É importante ter a visão sempre no horizonte, pois as ações presentes devem estar alinhadas com onde se quer chegar. Ter visão do seu negócio estabelece os parâmetros para a tomada de decisão, para os investimentos e principalmente para a estratégia de negócio que levará a visão."
@@ -87,45 +108,35 @@
                         <label for="exampleFormControlInput1" class="form-label">Visão</label>
                     </div>
                     <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="visao" maxlength="255"></textarea>
+                        name="visao" required maxlength="500"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="text-start">
                         <label for="exampleFormControlInput1" class="form-label">Valores</label>
                     </div>
                     <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="valores" maxlength="255"></textarea>
+                        name="valores" required maxlength="500"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="text-start">
                         <label for="exampleFormControlInput1" class="form-label">Objetivo</label>
                     </div>
                     <textarea class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="objetivo" maxlength="255"></textarea>
+                        name="objetivo" required maxlength="500"></textarea>
                 </div>
                 <div class="mb-3">
                     <div class="text-start">
                         <label for="exampleFormControlInput1" class="form-label">Localização</label>
                     </div>
                     <input type="text" class="input-txt form-control" id="exampleFormControlTextarea1" rows="3"
-                        name="localizacao" placeholder="https://goo.gl/maps/K6CKdT8trJPXrivb7" maxlength="255"/>
+                        name="localizacao" placeholder="https://goo.gl/maps/K6CKdT8trJPXrivb7" require maxlength="255"/>
                 </div>
                 </div>
             </fieldset>
 
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-light"> <a href="../dashboard.php"> Voltar</a></button>
-                        <button type="submit" class="btn btn-success">Salvar</button>
-                    </div>
-                    <div class="col">
-
-                    </div>
-                </div>
+            <div class="m-5 text-center">
+                <button type="button" class="btn btn-light text-center"> <a href="../dashboard.php"> Voltar</a></button>
+                <button type="submit" class="btn btn-success text-center">Salvar</button>
             </div>
         </form>
     </section>
