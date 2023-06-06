@@ -41,7 +41,7 @@ VSCode, Git, Github, Diagram.net
 - Usuario: o usuario do software é quem visita e consome o conteudo da pagina, acessando informações disponibilizadas no site atraves dos administradores dela.
 
 ## Diagrama de Entidade e Relacionamento
-![App Screenshot](https://imgbb.com/"><img src="https://i.ibb.co/nnV5byZ/entidade-e-relacionamento-institucional.jpg)
+![App Screenshot](https://i.ibb.co/nnV5byZ/entidade-e-relacionamento-institucional.jpg)
 
 ## Tela inicial
 
