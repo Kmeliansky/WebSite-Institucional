@@ -36,9 +36,9 @@ VSCode, Git, Github, Diagram.net
 ##  Caso de Uso
 ![App Screenshot](https://i.ibb.co/gM3s9T7/Diagrama-sem-nome.jpg) 
 
-- Administrador: 
+- Administrador: o administrador da pagina vai ser o responsavel por personalizar e editar informações sobre o site institucional da empresa, alem de poder cadastrar novos administradores
 
-- Usuario:
+- Usuario: o usuario do software é quem visita e consome o conteudo da pagina, acessando informações disponibilizadas no site atraves dos administradores dela.
 
 ## Diagrama de Entidade e Relacionamento
 ![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
