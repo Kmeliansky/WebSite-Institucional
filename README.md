@@ -42,14 +42,3 @@ VSCode, Git, Github, Diagram.net
 
 ## Diagrama de Entidade e Relacionamento
 ![App Screenshot](https://i.ibb.co/jwz9yYY/entidade-e-relacionamento-institucional.jpg)
-
-## Tela inicial
-
-- Interface Grafica
-![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
-
--Codigo Front-end
-![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
-
-- Codigo Back-end
-![App Screenshot](https://i.ibb.co/zPZQ1M9/estrutur-de-pastas.png)
