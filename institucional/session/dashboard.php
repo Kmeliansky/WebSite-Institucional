@@ -23,7 +23,6 @@
       }
 
 ?>
-
 <!doctype html>
 <html lang="pt-br">
 
@@ -36,7 +35,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <style>
+  <style>
     .item-menu {
       display: flex;
     }
@@ -60,19 +59,15 @@
       position: absolute;
       background-color: #f9f9f9;
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
     }
 
     .dropdown-content a {
-      color: black;
+      color: <?php print($sobre["cor_secundaria"]) ?>;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: <?php print($sobre["cor_primaria"]) ?>;
     }
 
     .dropdown:hover .dropdown-content {
@@ -81,64 +76,79 @@
 
     .dropdown:hover .dropbtn {
       background-color: <?php print($sobre["cor_primaria"]) ?>;
+      color: <?php print($sobre["cor_primaria"]) ?>;
     }
 
-    </style>
+    .title {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    @media (max-width: 876px) {
+      .container-opcao {
+        background-color: black;
+        display: flex;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: baseline;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+  <h3 class="text-center">Projeto de Conclusão de Curso - SENAI Botucatu</h3>
+
   <!-- Menu do website -->
-    <!----------------------Menu------------------------>
-    <nav class="nave d-flex align-items-center" style="background-color:<?php print($sobre["cor_primaria"]) ?>;">
+  <!----------------------Menu------------------------>
+  <nav class="nave d-flex align-items-center" style="background-color:<?php print($sobre["cor_primaria"]) ?>;">
     <section class="container py-3 nav d-flex justify-content-between align-items-center">
       <div class="item-menu">
-      <img class="" src="<?php print($imagemLogo); ?>" alt="Imagem do Produto" width="70px">
+        <img class="" src="<?php print($imagemLogo); ?>" alt="Imagem do Produto" width="70px">
       </div>
       <div class="item-menu">
-        <a class="nav-link text-light btn" href="../session/exit.php" style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;">Sair</a>
+        <h2 style="color: <?php print($sobre["cor_secundaria"]) ?> ;" class="title">INSTWEB</h2>
+      </div>
+      <div class="item-menu">
+        <a class="nav-link text-light btn" href="../session/exit.php"
+          style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;">Sair</a>
       </div>
     </section>
   </nav>
-    
-  <section class="container py-5 text-center">
-    <!-- Seção do menu -->
-    <div class="container py-5">
-      <img src="../image/dashboard-img.svg" width="300px" alt="imagem do logo">
-      <p>Seja bem-vindo a nossa página principal, caso necessite de ajuda <a href="ajuda.php">Clique aqui</a></p>
-    </div>
 
-    <div class="rounded d-flex justify-content-center flex-wrap">
-      <div class="row row-cols-4 d-flex justify-content-center flex-wrap">
-        <div class="col">
-        <div class="dropdown">
-            <button class="dropbtn">Produto</button>
-            <div class="dropdown-content">
-            <a class="dropdown-item" href="../session/produto/form-product-edit.php">Cadastrar Produtos</a>
-            <a class="dropdown-item" href="../session/produto/proccess-list-product.php">Listar Produtos</a>
-            </div>
+
+
+  <section class="container text-center py-5 ">
+    <section class="container text-center border rounded shadow p-3 mb-5 bg-body-tertiary rounded"">
+      <h1 class=" title text-center m-5 py-2">PAINEL PRINCIPAL </h1>
+      <p>Seja bem-vindo a nossa página principal, <?php print($sobre["nome"]) ?>
+        <!-- Seção do menu -->
+        <div class="container py-5">
+          <img src="../image/dashboard-img.svg" width="300px" alt="imagem do logo">
+          <div class="d-grid gap-2 d-md-block">
+          <button type="button" class="dropbtn" width="200px"
+              style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
+                href="../session/produto/form-product-edit.php">Cadastrar Produto</a></button>
+                <button type="button" class="dropbtn" width="200px"
+              style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
+                href="../session/produto/proccess-list-product.php">Listar Produtos</a></button>
+            <button type="button" class="dropbtn" width="200px"
+              style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
+                href="../session/sobre/form-sobre-edit.php">Sobre</a></button>
+            <button type="button" class="dropbtn" width="200px"
+              style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
+                href="../session/contato/form-contato-edit.php">Contato</a></button>
+                <button type="button" class="dropbtn" width="200px"
+              style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
+                href="../session/user/form-create.php">Cadastrar Funcionario</a></button>
+                <button type="button" class="dropbtn" width="200px"
+              style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
+                href="../session/proccess-list-users.php">Listar Usuario</a></button>
           </div>
         </div>
-        <div class="col">
-          <button type="button" class="dropbtn" width="200px" style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
-              href="../session/sobre/form-sobre-edit.php">Sobre</a></button>
-        </div>
-        <div class="col">
-          <button type="button" class="dropbtn" width="200px" style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;"><a class="opt"
-              href="../session/contato/form-contato-edit.php">Contato</a></button>
-        </div>
-        <div class="nav-item dropdown">
-        <div class="dropdown">
-            <button class="dropbtn">Usuários</button>
-            <div class="dropdown-content">
-            <a class="dropdown-item" href="../session/user/form-create.php">Cadastrar Usuário</a>
-            <a class="dropdown-item" href="../session/proccess-list-users.php">Usuários cadastrados</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    </section>
   </section>
 
 

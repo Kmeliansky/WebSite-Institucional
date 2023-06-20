@@ -295,9 +295,7 @@
         <h2 id="localizacao" class="text-center">Localização</h2>
         <iframe class="mapa" src="<?php print($sobre["localizacao"]);?>" width="600" height="450" style="border:0;"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-          <a class="btn btn-danger" href="<?php print($sobre["localizacao"]);?>">Ver rotas</a>
-        </div>
+        
       </div>
       <?php
 

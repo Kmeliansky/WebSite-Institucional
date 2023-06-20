@@ -1,33 +1,66 @@
+<?php
+    //chamada para o arquivo que verifica se o usuario está logado
+    include("../configuration/user-session.php");
+
+include("../configuration/connection.php");
+
+//Instrução SQL de seleção dos dados sobre a empresa.
+$SQLSobre = "SELECT * FROM sobre WHERE ativo = 1;";
+      
+//Executa a consulta SQL.
+$consultaSobre = mysqli_query($connect, $SQLSobre);
+
+//Verifica se existem retornos na consulta SQL.
+if (mysqli_num_rows($consultaSobre) > 0){
+
+  //apresenta todas as informações sobre a empresa
+  $sobre = mysqli_fetch_assoc($consultaSobre);
+  $imagemSobre = "data:image/jpeg;base64," . base64_encode($sobre['imagem_empresa']);
+  $imagemLogo = "data:image/jpeg;base64," . base64_encode($sobre['logo']);
+  } else{
+
+  //Retorna a mensagem para o usuário.
+  print("Não existem informações cadastradas sobre a empresa no banco de dados.");
+  }
+?>
+
+
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CRUD - Lista de Usuários</title>
+    <title>Lista dos administradores da Página</title>
 
     <!-- Link de referência ao CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- Link de referência do CSS de Icones do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+    <style>
+      .title{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: <?php print($sobre["cor_secundaria"]) ?>;
+      }
+    </style>
   </head>
   <body>
 
-    <!-- Menu do website -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #6043B5;">
-    <div class="container-fluid">
-      <a class="text-uppercase navba r-brand text-light" href="#">Logo aqui</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="navbar-nav">
-        <a class="nav-link text-light" href="login/form-login.php">Ajuda</a>
-        <a class="nav-link text-light" href="login/form-login.php">Sair</a>
+    <!----------------------Menu------------------------>
+    <nav class="nave d-flex align-items-center" style="background-color:<?php print($sobre["cor_primaria"]) ?>;">
+    <section class="container py-3 nav d-flex justify-content-between align-items-center">
+      <div class="item-menu">
+      <img class="" src="<?php print($imagemLogo); ?>" alt="Imagem do Produto" width="70px">
       </div>
-
-    </div>
+      <div class="item-menu">
+      <h1 class="title">Lista de administradores da Página</h1>
+      </div>
+      <div class="item-menu">
+        <a class="nav-link text-light btn" href="../session/exit.php" style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;">Sair</a>
+      </div>
+    </section>
   </nav>
 
     <!-- Seção do formulário -->

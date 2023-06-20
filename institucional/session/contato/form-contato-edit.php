@@ -1,6 +1,27 @@
 <?php
     //chamada para o arquivo que verifica se o usuario está logado
     include("../../configuration/user-session.php");
+
+include("../../configuration/connection.php");
+
+//Instrução SQL de seleção dos dados sobre a empresa.
+$SQLSobre = "SELECT * FROM sobre WHERE ativo = 1;";
+      
+//Executa a consulta SQL.
+$consultaSobre = mysqli_query($connect, $SQLSobre);
+
+//Verifica se existem retornos na consulta SQL.
+if (mysqli_num_rows($consultaSobre) > 0){
+
+  //apresenta todas as informações sobre a empresa
+  $sobre = mysqli_fetch_assoc($consultaSobre);
+  $imagemSobre = "data:image/jpeg;base64," . base64_encode($sobre['imagem_empresa']);
+  $imagemLogo = "data:image/jpeg;base64," . base64_encode($sobre['logo']);
+  } else{
+
+  //Retorna a mensagem para o usuário.
+  print("Não existem informações cadastradas sobre a empresa no banco de dados.");
+  }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -18,18 +39,16 @@
 </head>
 
 <body>
-  <!-- Menu do website -->
-  <nav class="navbar navbar-expand-lg " style="background-color: #6043B5;">
-    <div class="container-fluid">
-      <img class="text-uppercase navba r-brand text-light" src="../institucional/image/logo.svg" alt="logo da marca">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-nav">
-        <a class="nav-link text-light" href="login/form-login.php">Ajuda</a>
+   <!----------------------Menu------------------------>
+   <nav class="nave d-flex align-items-center" style="background-color:<?php print($sobre["cor_primaria"]) ?>;">
+    <section class="container py-3 nav d-flex justify-content-between align-items-center">
+      <div class="item-menu">
+      <img class="" src="<?php print($imagemLogo); ?>" alt="Imagem do Produto" width="70px">
       </div>
-    </div>
+      <div class="item-menu">
+        <a class="nav-link text-light btn" href="../session/exit.php" style="background-color:  <?php print($sobre["cor_secundaria"]) ?>; color:#FFFFFF;">Sair</a>
+      </div>
+    </section>
   </nav>
 
   <!-- Seção que apresentará a mensagem para o usuário -->
